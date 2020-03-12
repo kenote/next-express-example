@@ -1,0 +1,52 @@
+{
+  "name": "next-express-example",
+  "version": "1.0.0",
+  "description": "Next.js static website example.",
+  "main": "index.js",
+  "repository": "https://github.com/kenote/next-express-example.git",
+  "author": "thondery <thondery@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^4.0.1",
+    "easy-peasy": "^3.3.0",
+    "express": "^4.17.1",
+    "hoist-non-react-statics": "^3.3.2",
+    "next": "^9.2.2",
+    "next-redux-wrapper": "^5.0.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "ts-node": "^8.6.2",
+    "ts-optchain": "^0.1.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.3",
+    "@types/hoist-non-react-statics": "^3.3.1",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.9.0",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.7",
+    "@zeit/next-sass": "^1.0.1",
+    "antd-dayjs-webpack-plugin": "^0.0.8",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-plugin-import": "^1.13.0",
+    "backpack-core": "^0.8.4",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.5.5",
+    "node-sass": "^4.13.1",
+    "null-loader": "^3.0.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "develop": "npm run fix && backpack dev",
+    "build": "npm run fix && next build client && backpack build",
+    "start": "node ./build/index.js",
+    "fix": "node ./.fix/index.js"
+  }
+}
